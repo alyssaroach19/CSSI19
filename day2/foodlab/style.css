@@ -1,0 +1,16 @@
+h1
+{
+  color:red;
+  font-family:courier;
+  font-size: 110px;
+}
+
+h2{
+  color:orange;
+  font-size: 90px;
+  font-family: courier;
+}
+ body {
+   background-image: url("http://pluspng.com/img-png/food-png-food-salad-image-2962-428.png");
+background-size: cover;
+ }
