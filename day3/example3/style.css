@@ -1,0 +1,14 @@
+ul {
+     list-style-type: none;
+}
+
+a{
+    color: blue;
+    border-width:6px;
+    border-color: red;
+    border-style: dashed;
+}
+
+a:hover, a:visited{
+    text-decoration: one;
+}
