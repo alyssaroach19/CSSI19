@@ -13,3 +13,51 @@
 // limitations under the License.
 
 console.log("script is running...");
+
+
+const basicAlarm = (alarmMessage)=>{
+    return alarmMessage;
+;}
+console.log(basicAlarm("My alarm!"));
+
+
+function myAlarm(wakeup){
+    console.log("Hey , Alyssa, wakeup!" + wakeup);
+
+}
+myAlarm("5pm");
+
+
+function momAlarm(wakeup)
+{
+    console.log("Hey, mom, wakeup!" + wakeup);
+}
+momAlarm("8am");
+
+
+function familyAlarm(wakeup, now){
+    console.log("Hey " + wakeup + " wake up! it's " + now);
+}
+familyAlarm("alyssa","8am");
+
+
+function importantAlarm(alarm){
+    return alarm.toUpperCase();
+}
+console.log(importantAlarm("wakeup!"))
+
+function snoozeAlarm(num){
+    return "The alarm for "  + num + " has been changed " + (num + 1);
+}
+
+// The alarm for 3 has been changed to 4
+
+console.log(snoozeAlarm(6));
+
+var names = ["tanya", "mike", "ken", "tom", "alex", "max"];
+var i = 1;
+var text = ""
+
+for (names[i]){
+    text + names[i] + "wake up" + i++;
+}

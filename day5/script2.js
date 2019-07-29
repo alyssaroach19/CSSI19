@@ -42,3 +42,29 @@ function j (x,y,z)
 console.log(j(4,5,6));
 console.log(j(7,4,3));
 console.log(j(10,6,2));
+
+function k (r)
+{
+    return 2 * Math.PI * r;
+}
+console.log(k(10))
+console.log(k(1))
+console.log(k(1.5))
+
+function l (a,b,c)
+{
+    var d = b**2 - 4 * a * c;
+
+    if (d >= 0)
+    {
+        var srd = Math.sqrt(d);
+        return (-1 * b + srd)/(2*a);
+    }
+    else
+    {
+        return NaN;
+    
+    }
+}
+console.log(l(1,4,4));
+console.log(l(1,0,1));
