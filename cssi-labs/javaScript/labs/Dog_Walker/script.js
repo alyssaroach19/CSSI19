@@ -17,8 +17,8 @@ const dogName1 = "Steve";
 const dogType1 = "beagle";
 
 // Complete Task 1 Below
-
-
+console.log("I will walk" + dogName1 + "today at 12:00pm")
+console.log("I will walk" + dogType1 + "today at 12:00pm");
 
 const dogName2 = "Joe";
 const dogType2 = "bulldog";

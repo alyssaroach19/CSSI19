@@ -67,4 +67,4 @@ function l (a,b,c)
     }
 }
 console.log(l(1,4,4));
-console.log(l(1,0,1));
+console.log(l(1,0,));
