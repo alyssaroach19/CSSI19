@@ -1,1 +1,0 @@
-num = raw_input 
