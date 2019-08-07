@@ -44,7 +44,18 @@ class NewsPage(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'text/html'
         self.response.write('<h3>This is the news page!</h3>')
 
+class FavcolorPage(webapp2.RequestHandler):
+    def get(self):
+        t = the_jinja_env.get_template('templates/fav.html')
+        favs = {"items1":"Google", "items2": "youtube","items3":"facebook","items4":"twitter","items5":"asos","title":"This is my favorite colors page!"}
+        self.response.write(t.render(favs))
 
 
-routes = [('/', MainPage), ('/about', AboutPage), ('/news', NewsPage), ('/results', ResultPage)]
+routes = [
+    ('/', MainPage), 
+    ('/about', AboutPage), 
+    ('/news', NewsPage), 
+    ('/results', ResultPage), 
+    ('/fav', FavcolorPage)
+    ]
 app = webapp2.WSGIApplication( routes , debug=True)

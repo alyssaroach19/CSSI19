@@ -59,10 +59,16 @@ class HelloHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write('Hello World. Welcome to the root route of my app')
 
+class GoodbyeHandler(webapp2.RequestHandler):
+    def get(self):
+        self.response.write( 'My response is Goodbye World')
+
+
 # Route mapping
 app = webapp2.WSGIApplication([
     # This line routes the main url ('/')  - also know as
     # The root route - to the Fortune Handler
     ('/', HelloHandler),
-    ('/predict', FortuneHandler) #maps '/predict' to the FortuneHandler
+    ('/predict', FortuneHandler), #maps '/predict' to the FortuneHandler
+    ('/bye', GoodbyeHandler)
 ], debug=True)
